@@ -10,7 +10,17 @@ const PORT = process.env.PORT || 3000
 
 const app = express();
 
-mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true });
+const connectDB = async () => {
+  try {
+    const conn = await mongoose.connect(process.env.MONGODB_URI);
+    console.log(`MongoDB Connected: ${conn.connection.host}`);
+  } catch (error) {
+    console.log(error);
+    process.exit(1);
+  }
+}
+
+// mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true });
 
 const ArticleSchema = {
   title: String,
@@ -141,6 +151,11 @@ app.route('/articles/:articleTitle')
 
 
 
-app.listen(3000, function() {
-  console.log("Server started on port localhost:3000");
-});
+// app.listen(3000, function() {
+//   console.log("Server started on port localhost:3000");
+// });
+connectDB().then(() => {
+  app.listen(PORT, () => {
+      console.log("listening for requests on localhost:"+PORT+' .');
+  })
+})

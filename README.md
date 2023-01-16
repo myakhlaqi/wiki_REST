@@ -25,7 +25,7 @@ The following software must be installed before starting the project:
 ```
 Clone the project by this command:
 ```
-git clone https://github.com/myakhlaqi/toDoList.git
+https://github.com/myakhlaqi/wiki_REST.git
 ```
 ### Installing dependency
 
@@ -37,9 +37,8 @@ This project required the following nodejs dependencies:
     "dotenv": "^16.0.3",
     "ejs": "^3.1.8",
     "express": "^4.18.2",
-    "moment": "^2.29.4",
-    "mongoose": "^6.8.0",
-    "request": "^2.88.2"
+    "mongoose": "^6.8.3"
+
 ```
 To install all dependencies run following command on the project root
 ```
@@ -61,7 +60,9 @@ To run the application locally you type:
 
 ```
 npm run start
+```
 or
+```
 node index.js
 ```
 Open following link to see the web application:
@@ -70,7 +71,7 @@ http://localhost:3000/
 ```
 The online version of the application is up and running at this URL:
 ```
-https://todolist-1m63.onrender.com/
+
 ```
 
 
