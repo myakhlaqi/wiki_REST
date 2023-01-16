@@ -180,7 +180,11 @@ localhost:3000/articles/RESTful
 ```
 ## 🚀 Deployment <a name = "deployment"></a>
 
-Add additional notes about how to deploy this on a live system.
+## Deploy in under 10 seconds
+
+[![Deploy to Cyclic](https://deploy.cyclic.app/button.svg)](https://deploy.cyclic.app/)
+- Sets up instant continuous deployment on `git push`
+- Realtime backend logs and API request monitoring
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
