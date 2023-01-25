@@ -47,7 +47,7 @@ app.route('/articles/')
     }
     else {
       res.send(err);
-      // console.log(err);
+      
     } 
   })
 
