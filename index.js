@@ -20,7 +20,7 @@ const connectDB = async () => {
   }
 }
 
-// mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true });
+// mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true});
 
 const ArticleSchema = {
   title: String,
