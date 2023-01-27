@@ -152,7 +152,7 @@ app.route('/articles/:articleTitle')
 
 
 
-//   console.log("Server started on port localhost:3000");
+//   console.log("Server started on port localhost:);
 // });
 connectDB().then(() => {
   app.listen(PORT, () => {
